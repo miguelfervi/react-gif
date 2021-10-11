@@ -33,7 +33,6 @@ describe("Pruebas en el GifGrid", () => {
       });
     
     const wrapper = shallow(<GifGrid category={category}></GifGrid>);
-    expect(wrapper.find('p').exists()).toBe(false);
     expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
   });
 });
